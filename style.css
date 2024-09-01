@@ -1,0 +1,279 @@
+/*parte de body de la pagina web*/
+body{
+    background: radial-gradient(circle at center, rgba(63, 63, 206, 0.445), rgba(111, 216, 79, 0.795));
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+/*header de la pagina web*/
+.header{
+    /*ajustes del header*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*ajustes de stylo del header*/
+    backdrop-filter: blur(55px);
+    background-color: #3333337c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+.logo h1{
+    font-size: 24px;
+}
+.logo_I{
+    display: flex;
+    position: absolute;
+    left: 120px;
+    height: 70px;
+    width: 70px;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-between; /* Asegura que el logo y la barra de navegación estén separados */
+    align-items: center;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    gap: 10px;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.navbar a:hover{
+    transition: ease 500ms;
+    background-color: #b7d369;
+    border-radius: 25px;
+}
+.navbar a:not(:hover){
+    transition: ease 1s;
+}
+.logo:hover{
+    transition: ease 500ms;
+    background-color: peru;
+    border-radius: 15px;
+}
+.logo:not(:hover){
+    transition: ease 1s;
+}
+/*main de la pagina web y secciones*/
+.quiensoy-section{
+    /*ajuste de tamaño,anchura y de posicion*/
+    height: 159px;
+    width: 600px;
+    /*ajuste de estilo*/
+    background-color: rgba(228, 166, 73, 0.575);
+    border-radius: 25px;
+    margin-left: 25%;
+}
+.quiensoy-contenido{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    color: #fff;
+    font-size: larger;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+.contacto-section{
+    /*ajuste de tamaño,anchura y de posicion*/
+    height: 195px;
+    width: 600px;
+    /*ajuste de estilo*/
+    background-color: rgba(228, 166, 73, 0.575);
+    border-radius: 25px;
+    margin-left: 25%;
+}
+.contacto-contenido{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    color: #fff;
+    font-size: larger;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+.opinion-section{
+    /*ajuste de tamaño,anchura y de posicion*/
+    height: 295px;
+    width: 600px;
+    /*ajuste de estilo*/
+    background-color: rgba(228, 166, 73, 0.575);
+    border-radius: 25px;
+    margin-left: 25%;
+}
+.opinion-contenido{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    color: #fff;
+    font-size: larger;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+.input_text{
+    border-radius: 25px;
+    width: 570px;
+}
+.input_email{
+    border-radius: 25px;
+    width: 570px;
+}
+.input_button{
+    border-radius: 25px;
+    width: 570px;
+    background-color: #008000;
+}
+.footer-in{
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+.footer-out{
+    padding-left: 25%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+}
+/*ajuste para diferentes tipo de temaño*/
+/*ajuste para celulares*/
+@media screen and (max-width: 767px) {
+    body{
+        background: radial-gradient(circle at center, rgba(63, 63, 206, 0.445), rgba(111, 216, 79, 0.795));
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+    /*header de la pagina web*/
+    .header{
+        /*ajustes del header*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /*ajustes de stylo del header*/
+        backdrop-filter: blur(55px);
+        background-color: #3333337c;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 25px;
+    }
+    .logo h1{
+        font-size: 24px;
+    }
+    .logo_I{
+        display: flex;
+        position: absolute;
+        left: 120px;
+        height: 70px;
+        width: 70px;
+    }
+    .contenedor{
+        display: flex;
+        justify-content: space-between; /* Asegura que el logo y la barra de navegación estén separados */
+        align-items: center;
+        width: 100%;
+    }
+    .navbar{
+        display: flex;
+        gap: 10px;
+    }
+    .navbar a{
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+    .navbar a:hover{
+        transition: ease 500ms;
+        background-color: #b7d369;
+        border-radius: 25px;
+    }
+    .navbar a:not(:hover){
+        transition: ease 1s;
+    }
+    .logo:hover{
+        transition: ease 500ms;
+        background-color: peru;
+        border-radius: 15px;
+    }
+    .logo:not(:hover){
+        transition: ease 1s;
+    }
+    /*main de la pagina web y secciones*/
+    .quiensoy-section{
+        /*ajuste de tamaño,anchura y de posicion*/
+        height: 205px;
+        width: 450px;
+        /*ajuste de estilo*/
+        background-color: rgba(228, 166, 73, 0.575);
+        border-radius: 25px;
+        margin-left: 3%;
+    }
+    .quiensoy-contenido{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: italic;
+        color: #fff;
+        font-size: larger;
+        padding-top: 5px;
+        padding-left: 15px;
+    }
+    .contacto-section{
+        /*ajuste de tamaño,anchura y de posicion*/
+        height: 205px;
+        width: 450px;
+        /*ajuste de estilo*/
+        background-color: rgba(228, 166, 73, 0.575);
+        border-radius: 25px;
+        margin-left: 3%;
+    }
+    .contacto-contenido{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: italic;
+        color: #fff;
+        font-size: larger;
+        padding-top: 5px;
+        padding-left: 15px;
+    }
+    .opinion-section{
+        /*ajuste de tamaño,anchura y de posicion*/
+        height: 335px;
+        width: 458px;
+        /*ajuste de estilo*/
+        background-color: rgba(228, 166, 73, 0.575);
+        border-radius: 25px;
+        margin-left: 3%;
+    }
+    .opinion-contenido{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: italic;
+        color: #fff;
+        font-size: larger;
+        padding-top: 5px;
+        padding-left: 15px;
+    }
+    .input_text{
+        border-radius: 25px;
+        width: 430px;
+    }
+    .input_email{
+        border-radius: 25px;
+        width: 430px;
+    }
+    .input_button{
+        border-radius: 25px;
+        width: 430px;
+        background-color: #008000;
+    }
+    .footer-in{
+        display: flex;
+        width: 100%;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.459);
+    }
+    .footer-out{
+        padding-left: 10%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: x-large;
+    }
+}
