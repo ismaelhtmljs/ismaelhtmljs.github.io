@@ -277,3 +277,169 @@ body{
         font-size: x-large;
     }
 }
+/* Ajuste para dispositivos móviles más antiguos y pantallas muy pequeñas */
+@media screen and (max-width: 360px) {
+    body {
+        background: radial-gradient(circle at center, rgba(63, 63, 206, 0.445), rgba(111, 216, 79, 0.795));
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header de la página web */
+    .header {
+        display: flex;
+        flex-direction: column; /* Cambia a columna para adaptarse a pantallas más pequeñas */
+        align-items: center;
+        backdrop-filter: blur(55px);
+        background-color: #3333337c;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 15px;
+    }
+
+    .logo h1 {
+        font-size: 20px; /* Tamaño de fuente más pequeño para pantallas más pequeñas */
+    }
+
+    .logo_I {
+        display: none; /* Oculta el logo si es demasiado grande para pantallas pequeñas */
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column; /* Cambia a columna para mejor organización en pantallas pequeñas */
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column; /* Cambia a columna para mejor organización en pantallas pequeñas */
+        gap: 5px;
+    }
+
+    .navbar a {
+        padding: 8px 10px; /* Ajusta el padding para que sea más pequeño en pantallas pequeñas */
+    }
+
+    .navbar a:hover {
+        background-color: #b7d369;
+        border-radius: 15px; /* Ajusta el border-radius para pantallas pequeñas */
+    }
+
+    .logo:hover {
+        background-color: peru;
+        border-radius: 10px; /* Ajusta el border-radius para pantallas pequeñas */
+    }
+
+    /* Main de la página web y secciones */
+    .quiensoy-section, .contacto-section, .opinion-section {
+        height: auto; /* Ajusta la altura automática para que se ajuste al contenido */
+        width: 90%; /* Ajusta el ancho para pantallas pequeñas */
+        margin: 10px auto; /* Centra las secciones */
+    }
+
+    .quiensoy-contenido, .contacto-contenido, .opinion-contenido {
+        font-size: medium; /* Ajusta el tamaño de la fuente */
+        padding: 5px;
+    }
+
+    .input_text, .input_email, .input_button {
+        width: 100%; /* Ajusta el ancho para que ocupe el 100% del contenedor */
+        box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    }
+
+    .footer-in {
+        flex-direction: column; /* Cambia a columna para mejor visualización en pantallas pequeñas */
+    }
+
+    .footer-out {
+        padding-left: 5%;
+        font-size: large; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    }
+}
+/* Ajuste para teléfonos móviles actuales (360px - 768px) */
+@media screen and (max-width: 768px) and (min-width: 361px) {
+    body {
+        background: radial-gradient(circle at center, rgba(63, 63, 206, 0.445), rgba(111, 216, 79, 0.795));
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header de la página web */
+    .header {
+        display: flex;
+        flex-direction: column; /* Cambia a columna para mejor ajuste en pantallas más estrechas */
+        align-items: center;
+        backdrop-filter: blur(55px);
+        background-color: #3333337c;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 20px; /* Ajusta el border-radius para pantallas más pequeñas */
+    }
+
+    .logo h1 {
+        font-size: 22px; /* Ajusta el tamaño de fuente del logo */
+    }
+
+    .logo_I {
+        display: none; /* Oculta el logo si es demasiado grande */
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column; /* Cambia a columna para mejorar el diseño en pantallas más pequeñas */
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column; /* Cambia a columna para mejor organización en pantallas más pequeñas */
+        gap: 8px;
+    }
+
+    .navbar a {
+        padding: 8px 12px; /* Ajusta el padding para enlaces en pantallas más pequeñas */
+    }
+
+    .navbar a:hover {
+        background-color: #b7d369;
+        border-radius: 20px; /* Ajusta el border-radius para pantallas más pequeñas */
+    }
+
+    .logo:hover {
+        background-color: peru;
+        border-radius: 12px; /* Ajusta el border-radius para pantallas más pequeñas */
+    }
+
+    /* Main de la página web y secciones */
+    .quiensoy-section, .contacto-section, .opinion-section {
+        height: auto; /* Ajusta la altura automática para adaptarse al contenido */
+        width: 90%; /* Ajusta el ancho para pantallas más pequeñas */
+        margin: 10px auto; /* Centra las secciones */
+    }
+
+    .quiensoy-contenido, .contacto-contenido, .opinion-contenido {
+        font-size: medium; /* Ajusta el tamaño de la fuente */
+        padding: 5px;
+    }
+
+    .input_text, .input_email, .input_button {
+        width: 100%; /* Ajusta el ancho para que ocupe el 100% del contenedor */
+        box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    }
+
+    .footer-in {
+        flex-direction: column; /* Cambia a columna para mejor visualización en pantallas más pequeñas */
+    }
+
+    .footer-out {
+        padding-left: 5%;
+        font-size: large; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    }
+}
